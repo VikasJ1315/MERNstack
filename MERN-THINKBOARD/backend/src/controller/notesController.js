@@ -17,7 +17,7 @@ export async function fetchNotesById(req, res) {
     res.status(200).send(singleNote);
   } catch (error) {
     console.error("Note not Fetched");
-    res.status(500).json("Internal Server Error");
+    res.status(500).json("Internal Error");
   }
 }
 
